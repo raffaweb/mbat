@@ -86,7 +86,7 @@ body {
 body {
     font-family: "Lato";
     font-weight: 300;
-    font-size: 16px;
+    font-size: 16px; /*16*/
     color: #555;
 
     -webkit-font-smoothing: antialiased;
@@ -175,9 +175,11 @@ p {
 }
 
 .paragraph-lead {
-    font-size: 20px;
+    font-size: 20px; /*20*/
     color: #3498db;
 }
+
+
 
 strong {
     font-weight: 700;
@@ -270,7 +272,7 @@ a:after {
 
 #headerwrap {
 	background: url(../img/header_bg.jpg) no-repeat center top;
-	margin-top: -50px;
+	margin-top: 50px; /* -50 */
 	padding-top:120px;
 	text-align:center;
 	background-attachment: relative;
