@@ -1,9 +1,23 @@
 #!/bin/bash
 
-convert $1 -thumbnail x200 -resize '200x<' -resize 50% -gravity center -crop 100x100+0+0 +repage -format jpg -quality 91 t/$1
+imgdir=assets/img/gallery
+tmumbdir=$imgdir/t
 
-cat <<EOF
-<a href="http://mbat.taluci.it/assets/img/gallery/$1" title="$1" data-gallery>
-   <img src="http://mbat.taluci.it/assets/img/gallery/t/$1" alt="$1">
-</a>
+(
+echo "var gallery = ["
+
+for img in $imgdir/*.JPG; do
+    bn=$(basename $img)
+    convert $img -thumbnail x200 -resize '200x<' -resize 50% -gravity center -crop 100x100+0+0 +repage -format jpg -quality 91 $tmumbdir/$bn
+    cat <<EOF
+    {
+        title: '',
+        href: '$img',
+        type: 'image/jpeg',
+        thumbnail: '$tmumbdir/$bn'
+    },
 EOF
+done
+
+echo "];"
+) > gallery.js

@@ -439,6 +439,9 @@ a:after {
 	background-image: url('../img/bg/divider5.jpg')
 }
 
+.divider6 {
+	background-image: url('../img/bg/divider6.jpg')
+}
 
 /* ==========================================================================
    MEDIA QUERIES
@@ -471,4 +474,5 @@ a:after {
 
 ul { list-style-type: none; }
 li { margin: 10px; }
+.gallerylinks img { border: 0; margin: 0; vertical-align: middle; }
 

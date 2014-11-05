@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11,6 +11,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Blueimp gallery CSS -->
+    <link rel="stylesheet" href="assets/blueimp/css/blueimp-gallery.css">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -52,6 +55,7 @@
 			<li><a href="#about" class="smoothScroll">Progetto</a></li>
 			<li><a href="#team" class="smoothScroll">Chi siamo</a></li>
 			<li><a href="#playlist" class="smoothScroll">Playlist</a></li>
+			<li><a href="#foto" class="smoothScroll">Foto</a></li>
 			<li><a href="#portfolio" class="smoothScroll">Video</a></li>
 			<li><a href="#calendar" class="smoothScroll">Date</a></li>
 			<li><a href="#contact" class="smoothScroll">Contatti</a></li>
@@ -108,7 +112,7 @@ percussioni.</p>
 				<br>
 				<br>
 				<div class="col-lg-4 centered">
-					<img class="img img-circle" src="assets/img/team/mara1.jpg" height="120px" width="120px" alt="">
+					<img class="img img-circle" src="assets/img/team/mara.jpg" height="120px" width="120px" alt="">
 					<br>
 					<h4><b>Mara Bosisio</b></h4>
 					<a href="https://www.facebook.com/marabosisio.official" class="icon icon-facebook"></a>
@@ -124,7 +128,7 @@ percussioni.</p>
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-4 centered">
-					<img class="img img-circle" src="assets/img/team/renato2.jpg" height="120px" width="120px" alt="">
+					<img class="img img-circle" src="assets/img/team/renato.jpg" height="120px" width="120px" alt="">
 					<br>
 					<h4><b>Renato Caruso</b></h4>
 					<a href="https://www.facebook.com/renato.caruso.716" class="icon icon-facebook"></a>
@@ -253,6 +257,49 @@ percussioni.</p>
 			<br>
 		</div>
 
+        <!-- ==== SECTION DIVIDER6 -->
+		<section class="section-divider textdivider divider6">
+			<div class="container">
+				<h1>NON SOLO CLASSICI</h1>
+			</div><!-- container -->
+		</section><!-- section -->
+
+        <!-- ==== FOTO ==== -->
+    		<div class="container" id="foto" name="foto">
+    		<br>
+    			<div class="row">
+    				<br>
+    				<h1 class="centered">FOTO</h1>
+    				<hr>
+    				<br>
+    				<br>
+    			</div><!-- /row -->
+    			<div class="row">
+    			
+                    <div id="blueimp-gallery" class="blueimp-gallery">
+                        <div class="slides"></div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="close">×</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                    </div>
+                    
+                    <!-- The container for the list of example images -->
+                    <div id="links" class="links"></div>
+
+    		    </div>
+                <div class="row">
+    				<br>
+    				<hr>
+    				<br>
+    				<br>
+    			</div><!-- /row -->
+
+			</div>
+			
+			
 		<!-- ==== SECTION DIVIDER3 -->
 		<section class="section-divider textdivider divider3">
 			<div class="container">
@@ -401,6 +448,31 @@ percussioni.</p>
 	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+	
+	<!-- Blueimp gallery -->
+    <script src="assets/blueimp/js/blueimp-gallery.js"></script>
+    <script src="gallery.js"></script>
+    <script>
+        var linksContainer = $('#links');
+        $.each(gallery, function (index, photo) {
+            $('<a/>')
+                .append( $('<img>').prop('src', photo.thumbnail))
+                .prop('href', photo.href)
+                .prop('title', photo.title)
+            .appendTo(linksContainer);
+        });
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
+
+	
+	<!-- Google Analytcis -->
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
