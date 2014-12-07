@@ -239,4 +239,58 @@ var gallery = [
         type: 'image/jpeg',
         thumbnail: 'assets/img/gallery/t/DSC_6279.JPG'
     },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_1112.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_1112.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_1154.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_1154.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_1245.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_1245.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_1619.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_1619.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_5150.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_5150.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_5180.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_5180.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_5214.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_5214.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_5465.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_5465.jpg'
+    },
+    {
+        title: '',
+        href: 'assets/img/gallery/IMG_5509.jpg',
+        type: 'image/jpeg',
+        thumbnail: 'assets/img/gallery/t/IMG_5509.jpg'
+    },
 ];
