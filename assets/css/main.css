@@ -132,6 +132,9 @@ border: 0px solid transparent;
 	color: white;
 }
 
+.navbar-nav {
+    font-weight: 400;
+}
 
 hr {
     position: relative;
@@ -469,7 +472,7 @@ a:after {
 }
 
 /* ======
-   CUSTOM 
+   CUSTOM
    ====== */
 
 ul { list-style-type: none; }
