@@ -1,0 +1,10 @@
+ol {
+  list-style: none;
+}
+ol li {
+  counter-increment: mycounter;
+  content: counter(mycounter) ". ";
+}
+ol:first-of-type {
+  counter-reset: mycounter;
+}
