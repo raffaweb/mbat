@@ -12,9 +12,6 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Blueimp gallery CSS -->
-    <link rel="stylesheet" href="assets/blueimp/css/blueimp-gallery.css">
-
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/icomoon.css">
@@ -27,50 +24,43 @@
     <script src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
   	<div id="navbar-main">
-      <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        </div>
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        </button>
+	        </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-
             <li><a href="#home" class="smoothScroll">Trio</a></li>
 			<li><a href="#about" class="smoothScroll">Progetto</a></li>
 			<li><a href="#team" class="smoothScroll">Chi siamo</a></li>
 			<li><a href="#playlist" class="smoothScroll">Playlist</a></li>
-			<li><a href="#foto" class="smoothScroll">Foto</a></li>
 			<li><a href="#portfolio" class="smoothScroll">Video</a></li>
 			<li><a href="#calendar" class="smoothScroll">Date</a></li>
 			<li><a href="#contact" class="smoothScroll">Contatti</a></li>
-
+		  </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    </div>
+	</div>
+
   		<!-- ==== headerwrap ==== -->
-	    <div id="headerwrap" id="home" name="home">
+	    <div class="headerwrap" id="home">
 
 	    </div><!-- /headerwrap -->
 
 		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="about">
+		<div class="container" id="about">
 			<div class="row white">
 			<br>
  				<h1 class="centered">MARA BOSISIO ACOUSTIC TRIO</h1>
@@ -94,7 +84,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 		</section><!-- section -->
 
 		<!-- ==== CHI SIAMO ==== -->
-		<div class="container" id="team" name="team">
+		<div class="container" id="team">
 		<br>
 			<div class="row white centered">
 				<h1 class="centered">CHI SIAMO</h1>
@@ -102,7 +92,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 				<br>
 				<br>
 				<div class="col-lg-4 centered">
-					<img class="img img-circle" src="assets/img/team/mara.jpg" height="120px" width="120px" alt="">
+					<img class="img img-circle" src="assets/img/team/mara.jpg" height="120" width="120" alt="">
 					<br>
 					<h4><b>Mara Bosisio</b></h4>
 					<a href="https://www.facebook.com/marabosisio.official" class="icon icon-facebook"></a>
@@ -113,7 +103,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-4 centered">
-					<img class="img img-circle" src="assets/img/team/renato.jpg" height="120px" width="120px" alt="">
+					<img class="img img-circle" src="assets/img/team/renato.jpg" height="120" width="120" alt="">
 					<br>
 					<h4><b>Renato Caruso</b></h4>
 					<a href="https://www.facebook.com/renato.caruso.716" class="icon icon-facebook"></a>
@@ -132,7 +122,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-4 centered">
-					<img class="img img-circle" src="assets/img/team/raffaella.jpg" height="120px" width="120px" alt="">
+					<img class="img img-circle" src="assets/img/team/raffaella.jpg" height="120" width="120" alt="">
 					<br>
 					<h4><b>Raffaella Migliaccio</b></h4>
 					<a href="https://www.facebook.com/raffaella.migliaccio.35" class="icon icon-facebook"></a>
@@ -151,7 +141,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 		</section><!-- section -->
 
 		<!-- ==== PLAYLIST ==== -->
-		<div class="container" id="playlist" name="playlist">
+		<div class="container" id="playlist">
 		<br>
 			<div class="row white">
 
@@ -283,51 +273,8 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 			</div><!-- container -->
 		</section><!-- section -->
 
-        <!-- ==== FOTO ==== -->
-    		<div class="container" id="foto" name="foto">
-    		<br>
-    			<div class="row">
-    				<br>
-    				<h1 class="centered">FOTO</h1>
-    				<hr>
-    				<br>
-    				<br>
-    			</div><!-- /row -->
-    			<div class="row">
-
-                    <div id="blueimp-gallery" class="blueimp-gallery">
-                        <div class="slides"></div>
-                        <h3 class="title"></h3>
-                        <a class="prev">‹</a>
-                        <a class="next">›</a>
-                        <a class="close">×</a>
-                        <a class="play-pause"></a>
-                        <ol class="indicator"></ol>
-                    </div>
-
-                    <!-- The container for the list of example images -->
-                    <div id="links" class="links"></div>
-
-    		    </div>
-                <div class="row">
-    				<br>
-    				<hr>
-    				<br>
-    				<br>
-    			</div><!-- /row -->
-
-			</div>
-
-
-		<!-- ==== SECTION DIVIDER3 -->
-		<section class="section-divider textdivider divider3">
-			<div class="container">
-				<h1>UN PROGETTO DI MARA BOSISIO</h1>
-			</div><!-- container -->
-		</section><!-- section -->
-
 		<!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
+		<div class="container" id="portfolio">
 		<br>
 			<div class="row">
 				<br>
@@ -450,7 +397,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 		</section><!-- section -->
 
 		<!-- ==== CALENDAR ==== -->
-		<div class="container" id="calendar" name="calendar">
+		<div class="container" id="calendar">
 		<br>
 			<div class="row white centered">
 				<h1 class="centered">DATE</h1>
@@ -502,7 +449,7 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 			</div><!-- container -->
 		</section><!-- section -->
 
-		<div class="container" id="contact" name="contact">
+		<div class="container" id="contact">
 			<div class="row">
 			<br>
 				<h1 class="centered">GRAZIE PER AVERCI ASCOLTATO</h1>
