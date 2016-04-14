@@ -4025,8 +4025,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #333;
 }
 .navbar-inverse {
-  background-color: transparent; /* #222 */
-  border-color:transparent; ; /* #080808 */
+  background-color: transparent;
+  border-color: none;
+}
+.navbar-opaque {
+  background-color: white;
+  /* border-color: gray; */
 }
 .navbar-inverse .navbar-brand {
   color: #999;
@@ -4044,14 +4048,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
-  background-color: transparent;
+ /* color: red;
+  background-color: transparent; */
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #080808;
+  /* color: #fff; */
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
