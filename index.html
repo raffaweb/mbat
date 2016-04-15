@@ -396,8 +396,8 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 				<hr>
 				<ul>
 					<li><strong>17 settembre 2016</strong>, Evento Privato (Pavia)</li>
-					<li><strong>10 settembre 2016</strong>, Evento Privato (Livorno)</li>
-					<li><strong>27 agosto 2016</strong>, Evento Privato (Lecco)</li>
+					<li><strong>10 settembre 2016</strong>, Evento Privato (Firenze)</li>
+					<li><strong>27 agosto 2016</strong>, Evento Privato (Brianza)</li>
 					<li><strong>18 giugno 2016</strong>, Maggio Calolziese, Calolziocorte (LC)</li>
 					<li><strong>28 maggio 2016</strong>, Evento Privato (Stresa)</li>
 					<li><strong>26 maggio 2016</strong>, UEFA Champions Festival (Milano)</li>
@@ -481,27 +481,15 @@ Oltre ai brani inediti della cantautrice sarà proposta anche una vastissima sel
 	<script src="assets/js/classie.js"></script>
 	<script src="assets/js/cbpAnimatedHeader.js"></script>
 
-	<!-- Blueimp gallery -->
-    <script src="assets/blueimp/js/blueimp-gallery.js"></script>
-    <script src="gallery.js"></script>
     <script>
-        var linksContainer = $('#links');
-        $.each(gallery, function (index, photo) {
-            $('<a/>')
-                .append( $('<img>').prop('src', photo.thumbnail))
-                .prop('href', photo.href)
-                .prop('title', photo.title)
-            .appendTo(linksContainer);
-        });
-        document.getElementById('links').onclick = function (event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement,
-                link = target.src ? target.parentNode : target,
-                options = {index: link, event: event},
-                links = this.getElementsByTagName('a');
-            blueimp.Gallery(links, options);
-        };
-    </script>
+    	var header = document.querySelector( '.navbar-fixed-top' );
+		$( '.navbar-collapse' ).on( 'hidden.bs.collapse', function () {
+	  		classie.remove( header, 'navbar-opaque' );
+		})
+		$( '.navbar-collapse' ).on( 'shown.bs.collapse', function () {
+	  		classie.add( header, 'navbar-opaque' );
+		})
+	</script>
 
 
 	<!-- Google Analytcis

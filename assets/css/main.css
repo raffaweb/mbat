@@ -1,4 +1,4 @@
-\x/*
+/*
  * Author: Carlos Alvarez
  * URL: http://Alvarez.is
  *
@@ -292,6 +292,29 @@ a:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@media screen and (max-width:769px) {
+    #headerwrap {
+        background: url(../img/header_bg_small.jpg) no-repeat center top;
+        margin-top: 0px; /* -50 */
+        padding-top:120px;
+        text-align:center;
+        background-attachment: relative;
+        background-position: center center;
+        min-height: 960px;
+        width: 100%;
+
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
 #headerwrap h1 {
