@@ -302,7 +302,7 @@ a:after {
         text-align:center;
         background-attachment: relative;
         background-position: center center;
-        min-height: 960px;
+        min-height: 480px;
         width: 100%;
 
         -webkit-background-size: 100%;
